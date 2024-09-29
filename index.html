@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <div>Age Calculator</div>
+      <div id="row">
+        <div class="cell"></div>
+        <div class="cell alignCenter">Month</div>
+        <div class="cell alignCenter">Day</div>
+        <div class="cell alignCenter">Year</div>
+      </div>
+
+      <!-- Second row: Date of Birth inputs -->
+      <div id="row">
+        <div class="cell">Date of Birth:</div>
+        <div class="cell">
+          <input
+            name="dob_month"
+            id="dob_month"
+            value=""
+            size="2"
+            maxlength="2"
+            type="text"
+            inputmode="numeric"
+            placeholder="MM"
+            title="Enter month"
+            required=""
+            aria-label="Date of Birth, Month"
+          />
+        </div>
+        <div class="cell">
+          <input
+            type="number"
+            id="dob_day"
+            placeholder="DD"
+            title="Enter day"
+            required=""
+            aria-label="Date of Birth, Day"
+          />
+        </div>
+        <div class="cell">
+          <input
+            type="number"
+            id="dob_year"
+            placeholder="YYYY"
+            title="Enter year"
+            required=""
+            aria-label="Date of Birth, Year"
+          />
+        </div>
+      </div>
+
+      <!-- Third row: Find Age On inputs -->
+      <div id="row">
+        <div class="cell">Find Age on:</div>
+        <div class="cell">
+          <input
+            name="find_month"
+            id="find_month"
+            value=""
+            size="2"
+            maxlength="2"
+            type="text"
+            inputmode="numeric"
+            placeholder="MM"
+            title="Enter month"
+            required=""
+            aria-label="Find Age On, Month"
+          />
+        </div>
+        <div class="cell">
+          <input
+            type="number"
+            id="find_day"
+            placeholder="DD"
+            title="Enter day"
+            required=""
+            aria-label="Find Age On, Day"
+          />
+        </div>
+        <div class="cell">
+          <input
+            type="number"
+            id="find_year"
+            placeholder="YYYY"
+            title="Enter year"
+            required=""
+            aria-label="Find Age On, Year"
+          />
+        </div>
+      </div>
+      <div>
+        <input
+          type="submit"
+          value="Calculate"
+          class="btn"
+          name="calculateButton"
+          id="calculateButton"
+        />
+      </div>
+      <div>
+        <input
+          type="reset"
+          name="reset"
+          value="Clear"
+          class="btn"
+          id="clearbtn"
+        />
+      </div>
+      <div id="result1"></div>
+      <div id="result2"></div>
+    </form>
+  </body>
+</html>
